@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Przelicznik walut</title>
+  </head>
+  <body>
+    <main class="converter">
+      <header class="converter-head">
+        <h1 class="converter-head-logo">
+          <img src="images/foreign-currency-exchange.png" alt="logo" />
+        </h1>
+        <h2 class="converter-head-title">Przelicznik walut</h2>
+      </header>
+      <section class="converter-section">
+        <div class="converter-section-body">
+          <input
+            type="number"
+            placeholder="Kwota"
+            class="converter-section-body-input"
+            id="converter-input"
+          />
+          <select class="converter-section-body-list" id="select">
+            <option value="EUR" id="eur">EUR</option>
+            <option value="USD" id="usd">USD</option>
+            <option value="CHF" id="chf">CHF</option>
+          </select>
+          <button class="converter-section-body-button" id="converter-button">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+          <div class="converter-section-body-result">
+            <span id="converter-curency">0,00</span> pln
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

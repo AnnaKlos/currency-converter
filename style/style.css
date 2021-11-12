@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #616161;
+  font-family: "Rubik", sans-serif;
+}
+.converter {
+  background-color: #424242;
+
+  min-width: 580px;
+  max-width: 40vw;
+  margin: 200px auto;
+}
+img {
+  width: 150px;
+  margin: 30px;
+}
+
+.converter-head {
+  width: 40vw;
+  min-width: 580px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 40px auto 40px auto;
+}
+.converter-head-title {
+  font-size: 36px;
+  font-weight: bold;
+  align-self: center;
+  margin-left: 40px;
+  color: #ccc;
+}
+.converter-section {
+  display: flex;
+  width: 40vw;
+  margin: 10px auto;
+  border-bottom: 1px solid black;
+  min-width: 530px;
+}
+
+.converter-section-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60vw;
+  margin: 30px 40px;
+}
+
+.converter-section-body-input {
+  width: 10vw;
+  height: 55px;
+  background-color: #ccc;
+  font-size: 24px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.converter-section-body-list {
+  cursor: pointer;
+  background-color: #ccc;
+  font-size: 20px;
+  padding: 5px;
+  transition: 0.3s;
+}
+.converter-section-body-input:hover,
+.converter-section-body-list:hover {
+  background-color: #ddd;
+}
+.converter-section-body-button {
+  cursor: pointer;
+  background-color: #424242;
+  font-size: 40px;
+  padding: 5px 10px;
+  color: #ccc;
+  border: none;
+  transition: 0.3s;
+}
+.converter-section-body-button:hover {
+  background-color: #616161;
+}
+
+.converter-section-body-result {
+  width: 200px;
+  text-transform: uppercase;
+  color: #ccc;
+  font-size: 30px;
+  align-self: center;
+}
